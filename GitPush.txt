@@ -1,0 +1,24 @@
+# change the directory to where Git needs to be initialized
+cd Documents/Blunion/analytics/Git/python
+# initiating Git
+git init
+# set global variables
+git config --global user.email "blunionsolutions@gmail.com"
+git config --global user.name "blunion solutions"
+git config --list
+# to pull the files to local machine from Git use following command
+git pull git://github.com/blunionsolutions/python.git
+# check status of git
+git status
+# when changes are detected, need to add to those changes and then commit it.
+git add --all
+git commit -m "push from laptop v1"
+# now push changes to Git
+# use this command to remove origin of already set
+# git remote rm origin
+git remote add origin https://blunionsolutions@github.com/blunionsolutions/python.git
+# Push the files to Git
+git push origin master
+# enter the password for Github repository to push changes. 
+# After successfully pushing the changes, please quit Git
+exit;
